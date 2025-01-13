@@ -1,0 +1,20 @@
+# Ignore everything by default
+*
+!*/
+
+# Allow only Python files in any subdirectory
+!**/*.py
+
+.history/
+backup/
+results/
+
+# Allow only README.md
+!README.md
+
+# Always ignore these directories
+*_msft/
+**/__pycache__/
+**/results/
+**/perf_tool.egg-info/
+**/examples_depreciated/

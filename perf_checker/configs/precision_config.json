@@ -1,0 +1,33 @@
+{
+    "task": "tensor",
+    "dump_path": "./results",
+    "rank": [],
+    "step": [],
+    "level": "L1",
+    "enable_dataloader": false,
+    "tensor": {
+        "scope": [],
+        "list": [],
+        "data_mode": [
+            "all"
+        ],
+        "file_format": "npy"
+    },
+    "statistics": {
+        "scope": [],
+        "list": [],
+        "data_mode": [
+            "all"
+        ],
+        "summary_mode": "statistics"
+    },
+    "overflow_check": {
+        "overflow_nums": 1,
+        "check_mode": "all"
+    },
+    "run_ut": {
+        "white_list": [],
+        "black_list": [],
+        "error_data_path": "./"
+    }
+}
