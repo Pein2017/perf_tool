@@ -1,4 +1,5 @@
 .history/
 backup/
-results/**/*.pt
+**/results/**/*.pt
+**/results/**/*.pth
 __pycache__/

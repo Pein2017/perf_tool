@@ -1,0 +1,6 @@
+{
+ "task": "tensor",
+ "level": "L1",
+ "dump_data_dir": "./results/dump/run_5/inference/model1.decode/step22/rank/dump_tensor_data",
+ "data": {}
+}
