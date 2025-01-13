@@ -8,7 +8,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
 
-from device_setup import device
+from perf_checker.device_setup import device
 from perf_checker import (
     CollectorManager,
     monitor,

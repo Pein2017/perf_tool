@@ -1,3 +1,4 @@
+import json
 import os
 from typing import (
     Any,
@@ -5,7 +6,6 @@ from typing import (
     Optional,
 )
 
-from flask import json
 from msprobe.pytorch import PrecisionDebugger
 
 from ..base.base_collector import BaseCollector

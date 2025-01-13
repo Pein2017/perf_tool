@@ -4,6 +4,7 @@
 
 # Allow only Python files in any subdirectory
 !**/*.py
+**/results/
 
 .history/
 backup/
@@ -15,6 +16,3 @@ results/
 # Always ignore these directories
 *_msft/
 **/__pycache__/
-**/results/
-**/perf_tool.egg-info/
-**/examples_depreciated/

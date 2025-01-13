@@ -3,3 +3,4 @@ backup/
 **/results/**/*.pt
 **/results/**/*.pth
 __pycache__/
+*.egg-info/

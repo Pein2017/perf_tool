@@ -29,19 +29,50 @@ class CollectorManager:
         self,
         enable_time: bool = True,
         enable_precision: bool = False,
-        precision_config: Optional[str] = None,
+        precision_config: str = "default",
     ):
         """Initialize the collector manager.
 
         Args:
             enable_time: Whether to enable time monitoring
             enable_precision: Whether to enable precision monitoring
-            precision_config: Path to precision monitoring config file
+            precision_config: Path to precision monitoring config file or 'default' to use default config.
+                            Only used when enable_precision=True.
         """
         self.logger = setup_logger("manager")
         self.time_collector = TimeCollector() if enable_time else None
         self.precision_collector = None
-        if enable_precision and precision_config:
+
+        if enable_precision:
+            if precision_config == "default":
+                # Use the default config from the package
+                import os
+
+                import pkg_resources
+
+                precision_config = pkg_resources.resource_filename(
+                    "perf_checker", "configs/precision_config.json"
+                )
+            elif not os.path.isabs(precision_config):
+                # Convert relative path to absolute
+                precision_config = os.path.abspath(precision_config)
+
+            # Verify the config file exists
+            if not os.path.exists(precision_config):
+                raise FileNotFoundError(
+                    f"Precision config file not found at: {precision_config}. "
+                    "Please provide a valid path or use 'default' to use the default config."
+                )
+
+            # Verify it's a file and has .json extension
+            if not os.path.isfile(precision_config) or not precision_config.endswith(
+                ".json"
+            ):
+                raise ValueError(
+                    f"Invalid precision config file: {precision_config}. "
+                    "Please provide a valid JSON file or use 'default' to use the default config."
+                )
+
             self.precision_collector = PrecisionCollector(precision_config)
 
         self.default_enable_time = enable_time

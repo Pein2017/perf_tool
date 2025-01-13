@@ -277,13 +277,6 @@ The implementation provides comprehensive thread safety through:
    - Logging provides debugging information
    - Thread safety is maintained
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Implement changes with tests
-4. Submit a pull request
-
 ## License
 
 This project is licensed under the MIT License.
