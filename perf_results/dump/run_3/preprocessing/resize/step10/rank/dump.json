@@ -1,0 +1,6 @@
+{
+ "task": "tensor",
+ "level": "L1",
+ "dump_data_dir": "./perf_results/dump/run_3/preprocessing/resize/step10/rank/dump_tensor_data",
+ "data": {}
+}

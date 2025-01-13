@@ -14,18 +14,21 @@ from ..base.base_collector import BaseCollector
 class PrecisionCollector(BaseCollector):
     """Collects precision information using PrecisionDebugger with hierarchical support."""
 
-    def __init__(self, precision_config: str):
+    def __init__(self, precision_config: str, result_dir: Optional[str] = None):
         """Initialize the precision collector."""
         super().__init__("precision")
         self.config_path = precision_config
         self._active_debugger = None
-
+        self.result_dir = result_dir
         # Load and validate the configuration
         with open(precision_config, "r") as f:
             self.base_config = json.load(f)
 
         # Set up base dump path
-        base_dir = self.base_config.get("dump_path", "./results")
+        if result_dir:
+            base_dir = self.result_dir
+        else:
+            base_dir = self.base_config.get("dump_path", "./results")
         self.base_dump_path = os.path.join(base_dir, "dump")
         os.makedirs(self.base_dump_path, exist_ok=True)
 

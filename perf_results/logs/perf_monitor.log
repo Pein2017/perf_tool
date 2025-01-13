@@ -1,0 +1,475 @@
+2025-01-13 10:08:58,486 | perf_monitor.time | INFO | Initialized TimeCollector
+2025-01-13 10:08:58,535 | perf_monitor.manager | DEBUG | Registered config for preprocessing/resize
+2025-01-13 10:08:58,535 | perf_monitor.manager | DEBUG | Registered config for preprocessing/augment
+2025-01-13 10:08:58,535 | perf_monitor.manager | DEBUG | Registered config for postprocessing/decode
+2025-01-13 10:08:58,535 | perf_monitor.manager | DEBUG | Registered config for postprocessing/fuse
+2025-01-13 10:08:58,790 | perf_monitor.manager | DEBUG | Set run ID to 1
+2025-01-13 10:08:58,791 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/resize, time enabled: True, precision enabled: True
+2025-01-13 10:08:58,791 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/resize_1
+2025-01-13 10:08:58,791 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:08:58,791 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: resize
+2025-01-13 10:08:59,400 | perf_monitor.precision | DEBUG | Started precision collection for preprocessing/resize_1
+2025-01-13 10:08:59,400 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:08:59,400 | perf_monitor.manager | DEBUG | Started precision collection for stage: preprocessing, tag: resize
+2025-01-13 10:08:59,496 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,496 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/resize_1, elapsed: 0.705116s
+2025-01-13 10:08:59,496 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:08:59,496 | perf_monitor.precision | DEBUG | Ended precision collection for preprocessing/resize_1
+2025-01-13 10:08:59,496 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:08:59,496 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/augment, time enabled: True, precision enabled: False
+2025-01-13 10:08:59,496 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/augment_1
+2025-01-13 10:08:59,496 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:08:59,496 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: augment
+2025-01-13 10:08:59,496 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,496 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/augment_1, elapsed: 0.000088s
+2025-01-13 10:08:59,496 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:08:59,496 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:08:59,497 | perf_monitor.manager | DEBUG | Registered config for inference/model1.forward
+2025-01-13 10:08:59,497 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.forward, time enabled: True, precision enabled: True
+2025-01-13 10:08:59,497 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.forward_1
+2025-01-13 10:08:59,497 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:08:59,497 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.forward
+2025-01-13 10:08:59,504 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.forward_1
+2025-01-13 10:08:59,504 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:08:59,504 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.forward
+2025-01-13 10:08:59,817 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,817 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.forward_1, elapsed: 0.320051s
+2025-01-13 10:08:59,817 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:08:59,817 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.forward_1
+2025-01-13 10:08:59,817 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:08:59,817 | perf_monitor.manager | DEBUG | Registered config for inference/model1.decode
+2025-01-13 10:08:59,817 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.decode, time enabled: True, precision enabled: True
+2025-01-13 10:08:59,817 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.decode_1
+2025-01-13 10:08:59,817 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:08:59,817 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.decode
+2025-01-13 10:08:59,825 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.decode_1
+2025-01-13 10:08:59,825 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:08:59,825 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.decode
+2025-01-13 10:08:59,825 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:08:59,825 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_1
+2025-01-13 10:08:59,825 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:08:59,825 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:08:59,845 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,845 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_1, elapsed: 0.019640s
+2025-01-13 10:08:59,845 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:08:59,845 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.decode_1
+2025-01-13 10:08:59,845 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:08:59,845 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,845 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.decode_1, elapsed: 0.027917s
+2025-01-13 10:08:59,845 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:08:59,845 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:08:59,845 | perf_monitor.manager | DEBUG | Registered config for inference/model2.forward
+2025-01-13 10:08:59,846 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.forward, time enabled: True, precision enabled: True
+2025-01-13 10:08:59,846 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.forward_1
+2025-01-13 10:08:59,846 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:08:59,846 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.forward
+2025-01-13 10:08:59,852 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.forward_1
+2025-01-13 10:08:59,852 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:08:59,852 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.forward
+2025-01-13 10:08:59,941 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,941 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.forward_1, elapsed: 0.095631s
+2025-01-13 10:08:59,941 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:08:59,942 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.forward_1
+2025-01-13 10:08:59,942 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:08:59,942 | perf_monitor.manager | DEBUG | Registered config for inference/model2.decode
+2025-01-13 10:08:59,942 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.decode, time enabled: True, precision enabled: True
+2025-01-13 10:08:59,942 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.decode_1
+2025-01-13 10:08:59,942 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:08:59,942 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.decode
+2025-01-13 10:08:59,950 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.decode_1
+2025-01-13 10:08:59,950 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:08:59,950 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.decode
+2025-01-13 10:08:59,950 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:08:59,950 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_2
+2025-01-13 10:08:59,950 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:08:59,950 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:08:59,957 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,957 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_2, elapsed: 0.006808s
+2025-01-13 10:08:59,957 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:08:59,957 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.decode_1
+2025-01-13 10:08:59,957 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:08:59,957 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,957 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.decode_1, elapsed: 0.015438s
+2025-01-13 10:08:59,957 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:08:59,957 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:08:59,957 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/fuse, time enabled: True, precision enabled: False
+2025-01-13 10:08:59,958 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/fuse_1
+2025-01-13 10:08:59,958 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:08:59,958 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: fuse
+2025-01-13 10:08:59,958 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,958 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/fuse_1, elapsed: 0.000255s
+2025-01-13 10:08:59,958 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:08:59,958 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:08:59,958 | perf_monitor.manager | DEBUG | Set run ID to 2
+2025-01-13 10:08:59,959 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/resize, time enabled: True, precision enabled: True
+2025-01-13 10:08:59,959 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/resize_1
+2025-01-13 10:08:59,959 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:08:59,959 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: resize
+2025-01-13 10:08:59,966 | perf_monitor.precision | DEBUG | Started precision collection for preprocessing/resize_1
+2025-01-13 10:08:59,966 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:08:59,966 | perf_monitor.manager | DEBUG | Started precision collection for stage: preprocessing, tag: resize
+2025-01-13 10:08:59,970 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,970 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/resize_1, elapsed: 0.010990s
+2025-01-13 10:08:59,970 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:08:59,970 | perf_monitor.precision | DEBUG | Ended precision collection for preprocessing/resize_1
+2025-01-13 10:08:59,970 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:08:59,970 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/augment, time enabled: True, precision enabled: False
+2025-01-13 10:08:59,970 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/augment_1
+2025-01-13 10:08:59,970 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:08:59,970 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: augment
+2025-01-13 10:08:59,984 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:08:59,984 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/augment_1, elapsed: 0.013539s
+2025-01-13 10:08:59,984 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:08:59,984 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:08:59,984 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.forward, time enabled: True, precision enabled: True
+2025-01-13 10:08:59,984 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.forward_1
+2025-01-13 10:08:59,984 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:08:59,984 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.forward
+2025-01-13 10:08:59,991 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.forward_1
+2025-01-13 10:08:59,992 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:08:59,992 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.forward
+2025-01-13 10:09:00,025 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,025 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.forward_1, elapsed: 0.040479s
+2025-01-13 10:09:00,025 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,025 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.forward_1
+2025-01-13 10:09:00,025 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,025 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.decode, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,025 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.decode_1
+2025-01-13 10:09:00,025 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,025 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.decode
+2025-01-13 10:09:00,032 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.decode_1
+2025-01-13 10:09:00,032 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,032 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.decode
+2025-01-13 10:09:00,032 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,032 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_1
+2025-01-13 10:09:00,032 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:09:00,032 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:09:00,038 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,038 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_1, elapsed: 0.006571s
+2025-01-13 10:09:00,038 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:09:00,039 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.decode_1
+2025-01-13 10:09:00,039 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,039 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,039 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.decode_1, elapsed: 0.013536s
+2025-01-13 10:09:00,039 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,039 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,039 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.forward, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,039 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.forward_1
+2025-01-13 10:09:00,039 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,039 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.forward
+2025-01-13 10:09:00,045 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.forward_1
+2025-01-13 10:09:00,045 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,045 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.forward
+2025-01-13 10:09:00,102 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,102 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.forward_1, elapsed: 0.063327s
+2025-01-13 10:09:00,102 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,103 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.forward_1
+2025-01-13 10:09:00,103 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,103 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.decode, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,103 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.decode_1
+2025-01-13 10:09:00,103 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,103 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.decode
+2025-01-13 10:09:00,109 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.decode_1
+2025-01-13 10:09:00,109 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,109 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.decode
+2025-01-13 10:09:00,109 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,109 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_2
+2025-01-13 10:09:00,110 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:09:00,110 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:09:00,116 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,116 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_2, elapsed: 0.006636s
+2025-01-13 10:09:00,116 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:09:00,116 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.decode_1
+2025-01-13 10:09:00,116 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,116 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,117 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.decode_1, elapsed: 0.013710s
+2025-01-13 10:09:00,117 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,117 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,117 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/fuse, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,117 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/fuse_1
+2025-01-13 10:09:00,117 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:09:00,117 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: fuse
+2025-01-13 10:09:00,117 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,117 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/fuse_1, elapsed: 0.000254s
+2025-01-13 10:09:00,117 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:09:00,117 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,118 | perf_monitor.manager | DEBUG | Set run ID to 3
+2025-01-13 10:09:00,118 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/resize, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,118 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/resize_1
+2025-01-13 10:09:00,118 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,118 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: resize
+2025-01-13 10:09:00,125 | perf_monitor.precision | DEBUG | Started precision collection for preprocessing/resize_1
+2025-01-13 10:09:00,125 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,126 | perf_monitor.manager | DEBUG | Started precision collection for stage: preprocessing, tag: resize
+2025-01-13 10:09:00,129 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,129 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/resize_1, elapsed: 0.011432s
+2025-01-13 10:09:00,130 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,130 | perf_monitor.precision | DEBUG | Ended precision collection for preprocessing/resize_1
+2025-01-13 10:09:00,130 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,130 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/augment, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,130 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/augment_1
+2025-01-13 10:09:00,130 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:09:00,130 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: augment
+2025-01-13 10:09:00,130 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,130 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/augment_1, elapsed: 0.000225s
+2025-01-13 10:09:00,130 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:09:00,130 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,130 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.forward, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,131 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.forward_1
+2025-01-13 10:09:00,131 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,131 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.forward
+2025-01-13 10:09:00,137 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.forward_1
+2025-01-13 10:09:00,138 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,138 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.forward
+2025-01-13 10:09:00,170 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,171 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.forward_1, elapsed: 0.040043s
+2025-01-13 10:09:00,171 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,171 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.forward_1
+2025-01-13 10:09:00,171 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,171 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.decode, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,171 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.decode_1
+2025-01-13 10:09:00,171 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,171 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.decode
+2025-01-13 10:09:00,177 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.decode_1
+2025-01-13 10:09:00,177 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,177 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.decode
+2025-01-13 10:09:00,178 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,178 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_1
+2025-01-13 10:09:00,178 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:09:00,178 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:09:00,184 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,184 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_1, elapsed: 0.006130s
+2025-01-13 10:09:00,184 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:09:00,184 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.decode_1
+2025-01-13 10:09:00,184 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,184 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,184 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.decode_1, elapsed: 0.013043s
+2025-01-13 10:09:00,184 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,184 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,184 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.forward, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,184 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.forward_1
+2025-01-13 10:09:00,184 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,184 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.forward
+2025-01-13 10:09:00,192 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.forward_1
+2025-01-13 10:09:00,192 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,192 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.forward
+2025-01-13 10:09:00,248 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,248 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.forward_1, elapsed: 0.064107s
+2025-01-13 10:09:00,248 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,249 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.forward_1
+2025-01-13 10:09:00,249 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,249 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.decode, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,249 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.decode_1
+2025-01-13 10:09:00,249 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,249 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.decode
+2025-01-13 10:09:00,256 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.decode_1
+2025-01-13 10:09:00,256 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,256 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.decode
+2025-01-13 10:09:00,256 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,256 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_2
+2025-01-13 10:09:00,256 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:09:00,256 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:09:00,263 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,263 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_2, elapsed: 0.007408s
+2025-01-13 10:09:00,264 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:09:00,264 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.decode_1
+2025-01-13 10:09:00,264 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,264 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,264 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.decode_1, elapsed: 0.015144s
+2025-01-13 10:09:00,264 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,264 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,264 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/fuse, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,264 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/fuse_1
+2025-01-13 10:09:00,264 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:09:00,264 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: fuse
+2025-01-13 10:09:00,265 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,265 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/fuse_1, elapsed: 0.000245s
+2025-01-13 10:09:00,265 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:09:00,265 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,265 | perf_monitor.manager | DEBUG | Set run ID to 4
+2025-01-13 10:09:00,265 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/resize, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,266 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/resize_1
+2025-01-13 10:09:00,266 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,266 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: resize
+2025-01-13 10:09:00,273 | perf_monitor.precision | DEBUG | Started precision collection for preprocessing/resize_1
+2025-01-13 10:09:00,273 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,273 | perf_monitor.manager | DEBUG | Started precision collection for stage: preprocessing, tag: resize
+2025-01-13 10:09:00,278 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,278 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/resize_1, elapsed: 0.012398s
+2025-01-13 10:09:00,278 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,278 | perf_monitor.precision | DEBUG | Ended precision collection for preprocessing/resize_1
+2025-01-13 10:09:00,278 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,278 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/augment, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,279 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/augment_1
+2025-01-13 10:09:00,279 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:09:00,279 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: augment
+2025-01-13 10:09:00,279 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,279 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/augment_1, elapsed: 0.000561s
+2025-01-13 10:09:00,280 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:09:00,280 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,280 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.forward, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,280 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.forward_1
+2025-01-13 10:09:00,280 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,280 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.forward
+2025-01-13 10:09:00,287 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.forward_1
+2025-01-13 10:09:00,287 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,287 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.forward
+2025-01-13 10:09:00,320 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,320 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.forward_1, elapsed: 0.040550s
+2025-01-13 10:09:00,321 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,321 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.forward_1
+2025-01-13 10:09:00,321 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,321 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.decode, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,321 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.decode_1
+2025-01-13 10:09:00,321 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,321 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.decode
+2025-01-13 10:09:00,330 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.decode_1
+2025-01-13 10:09:00,330 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,331 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.decode
+2025-01-13 10:09:00,331 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,331 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_1
+2025-01-13 10:09:00,331 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:09:00,331 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:09:00,338 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,338 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_1, elapsed: 0.007516s
+2025-01-13 10:09:00,338 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:09:00,338 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.decode_1
+2025-01-13 10:09:00,339 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,339 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,339 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.decode_1, elapsed: 0.017833s
+2025-01-13 10:09:00,339 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,339 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,339 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.forward, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,339 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.forward_1
+2025-01-13 10:09:00,339 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,339 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.forward
+2025-01-13 10:09:00,345 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.forward_1
+2025-01-13 10:09:00,345 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,346 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.forward
+2025-01-13 10:09:00,396 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,396 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.forward_1, elapsed: 0.056385s
+2025-01-13 10:09:00,396 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,396 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.forward_1
+2025-01-13 10:09:00,396 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,396 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.decode, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,396 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.decode_1
+2025-01-13 10:09:00,396 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,396 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.decode
+2025-01-13 10:09:00,402 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.decode_1
+2025-01-13 10:09:00,402 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,402 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.decode
+2025-01-13 10:09:00,402 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,402 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_2
+2025-01-13 10:09:00,402 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:09:00,402 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:09:00,409 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,409 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_2, elapsed: 0.006418s
+2025-01-13 10:09:00,409 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:09:00,409 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.decode_1
+2025-01-13 10:09:00,409 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,409 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,409 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.decode_1, elapsed: 0.013087s
+2025-01-13 10:09:00,409 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,409 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,409 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/fuse, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,409 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/fuse_1
+2025-01-13 10:09:00,410 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:09:00,410 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: fuse
+2025-01-13 10:09:00,410 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,410 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/fuse_1, elapsed: 0.000111s
+2025-01-13 10:09:00,410 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:09:00,410 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,410 | perf_monitor.manager | DEBUG | Set run ID to 5
+2025-01-13 10:09:00,410 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/resize, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,410 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/resize_1
+2025-01-13 10:09:00,410 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,411 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: resize
+2025-01-13 10:09:00,417 | perf_monitor.precision | DEBUG | Started precision collection for preprocessing/resize_1
+2025-01-13 10:09:00,417 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,418 | perf_monitor.manager | DEBUG | Started precision collection for stage: preprocessing, tag: resize
+2025-01-13 10:09:00,421 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,421 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/resize_1, elapsed: 0.010926s
+2025-01-13 10:09:00,421 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,421 | perf_monitor.precision | DEBUG | Ended precision collection for preprocessing/resize_1
+2025-01-13 10:09:00,421 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: preprocessing, Tag: resize_1
+2025-01-13 10:09:00,422 | perf_monitor.manager | DEBUG | Starting monitoring for preprocessing/augment, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,422 | perf_monitor.time | DEBUG | Started timing collection for preprocessing/augment_1
+2025-01-13 10:09:00,422 | perf_monitor.time | DEBUG | Started monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:09:00,422 | perf_monitor.manager | DEBUG | Started timing collection for stage: preprocessing, tag: augment
+2025-01-13 10:09:00,422 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,422 | perf_monitor.time | DEBUG | Ended timing collection for preprocessing/augment_1, elapsed: 0.000253s
+2025-01-13 10:09:00,422 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: preprocessing, Tag: augment_1
+2025-01-13 10:09:00,422 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,422 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.forward, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,422 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.forward_1
+2025-01-13 10:09:00,422 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,422 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.forward
+2025-01-13 10:09:00,429 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.forward_1
+2025-01-13 10:09:00,429 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,429 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.forward
+2025-01-13 10:09:00,466 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,466 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.forward_1, elapsed: 0.043330s
+2025-01-13 10:09:00,466 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,466 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.forward_1
+2025-01-13 10:09:00,466 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.forward_1
+2025-01-13 10:09:00,466 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model1.decode, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,466 | perf_monitor.time | DEBUG | Started timing collection for inference/model1.decode_1
+2025-01-13 10:09:00,466 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,466 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model1.decode
+2025-01-13 10:09:00,474 | perf_monitor.precision | DEBUG | Started precision collection for inference/model1.decode_1
+2025-01-13 10:09:00,474 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,474 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model1.decode
+2025-01-13 10:09:00,475 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,475 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_1
+2025-01-13 10:09:00,475 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:09:00,475 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:09:00,484 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,485 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_1, elapsed: 0.009938s
+2025-01-13 10:09:00,485 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_1
+2025-01-13 10:09:00,485 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model1.decode_1
+2025-01-13 10:09:00,485 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,485 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,485 | perf_monitor.time | DEBUG | Ended timing collection for inference/model1.decode_1, elapsed: 0.018629s
+2025-01-13 10:09:00,485 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model1.decode_1
+2025-01-13 10:09:00,485 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,485 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.forward, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,485 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.forward_1
+2025-01-13 10:09:00,485 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,485 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.forward
+2025-01-13 10:09:00,494 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.forward_1
+2025-01-13 10:09:00,494 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,494 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.forward
+2025-01-13 10:09:00,557 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,557 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.forward_1, elapsed: 0.071260s
+2025-01-13 10:09:00,557 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,557 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.forward_1
+2025-01-13 10:09:00,557 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.forward_1
+2025-01-13 10:09:00,557 | perf_monitor.manager | DEBUG | Starting monitoring for inference/model2.decode, time enabled: True, precision enabled: True
+2025-01-13 10:09:00,557 | perf_monitor.time | DEBUG | Started timing collection for inference/model2.decode_1
+2025-01-13 10:09:00,557 | perf_monitor.time | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,557 | perf_monitor.manager | DEBUG | Started timing collection for stage: inference, tag: model2.decode
+2025-01-13 10:09:00,565 | perf_monitor.precision | DEBUG | Started precision collection for inference/model2.decode_1
+2025-01-13 10:09:00,565 | perf_monitor.precision | DEBUG | Started monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,565 | perf_monitor.manager | DEBUG | Started precision collection for stage: inference, tag: model2.decode
+2025-01-13 10:09:00,565 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/decode, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,565 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/decode_2
+2025-01-13 10:09:00,565 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:09:00,565 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: decode
+2025-01-13 10:09:00,573 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,573 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/decode_2, elapsed: 0.007834s
+2025-01-13 10:09:00,573 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: decode_2
+2025-01-13 10:09:00,573 | perf_monitor.precision | DEBUG | Ended precision collection for inference/model2.decode_1
+2025-01-13 10:09:00,574 | perf_monitor.precision | DEBUG | [precision] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,574 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,574 | perf_monitor.time | DEBUG | Ended timing collection for inference/model2.decode_1, elapsed: 0.016404s
+2025-01-13 10:09:00,574 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: inference, Tag: model2.decode_1
+2025-01-13 10:09:00,574 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,574 | perf_monitor.manager | DEBUG | Starting monitoring for postprocessing/fuse, time enabled: True, precision enabled: False
+2025-01-13 10:09:00,574 | perf_monitor.time | DEBUG | Started timing collection for postprocessing/fuse_1
+2025-01-13 10:09:00,574 | perf_monitor.time | DEBUG | Started monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:09:00,574 | perf_monitor.manager | DEBUG | Started timing collection for stage: postprocessing, tag: fuse
+2025-01-13 10:09:00,574 | perf_monitor.manager | DEBUG | Ending monitoring, time collector: True, precision collector: True
+2025-01-13 10:09:00,574 | perf_monitor.time | DEBUG | Ended timing collection for postprocessing/fuse_1, elapsed: 0.000290s
+2025-01-13 10:09:00,574 | perf_monitor.time | DEBUG | [time] Ended monitoring block - Stage: postprocessing, Tag: fuse_1
+2025-01-13 10:09:00,574 | perf_monitor.precision | WARNING | [precision] No active monitoring block to end of None
+2025-01-13 10:09:00,576 | perf_monitor.export | INFO | Exported timing data to perf_results/time/timing_results_20250113_10.csv

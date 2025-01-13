@@ -168,7 +168,7 @@ class BaseCollector(ABC):
         """End monitoring the current code block."""
         if not self.current_context:
             self.logger.warning(
-                f"[{self._collector_type}] No active monitoring block to end"
+                f"[{self._collector_type}] No active monitoring block to end of {self.current_context}"
             )
             return
 

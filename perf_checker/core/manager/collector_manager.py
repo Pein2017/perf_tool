@@ -1,5 +1,6 @@
 """Manager for coordinating multiple collectors in the performance analysis tool."""
 
+import os
 from functools import wraps
 from typing import (
     Callable,
@@ -22,6 +23,7 @@ T = TypeVar("T")  # Return type for the decorated function
 P = ParamSpec("P")  # Parameter specification for the decorated function
 
 
+# TODO: resolve the conflicts for estimating the time of the operators when precision is enabled
 class CollectorManager:
     """Unified manager for hierarchical time and precision monitoring."""
 
@@ -30,6 +32,7 @@ class CollectorManager:
         enable_time: bool = True,
         enable_precision: bool = False,
         precision_config: str = "default",
+        result_dir: str = "perf_results",
     ):
         """Initialize the collector manager.
 
@@ -46,7 +49,6 @@ class CollectorManager:
         if enable_precision:
             if precision_config == "default":
                 # Use the default config from the package
-                import os
 
                 import pkg_resources
 

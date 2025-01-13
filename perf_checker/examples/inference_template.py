@@ -8,48 +8,19 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
 
+from perf_checker import CollectorManager, initialize_monitoring, monitor
 from perf_checker.device_setup import device
-from perf_checker import (
-    CollectorManager,
-    monitor,
-    set_default_manager,
-    setup_base_logger,
-)
 
 DEVICE = device
 
 
-def initialize_monitoring(
-    enable_time: bool = True,
-    enable_precision: bool = True,
-    precision_config: str = "configs/precision_config.json",
-) -> CollectorManager:
-    """Initialize the monitoring system.
-
-    This must be called before using any @monitor decorators.
-
-    Args:
-        enable_time: Whether to enable time monitoring
-        enable_precision: Whether to enable precision monitoring
-        precision_config: Path to precision monitoring config file
-
-    Returns:
-        The initialized CollectorManager instance
-    """
-    manager = CollectorManager(
-        enable_time=enable_time,
-        enable_precision=enable_precision,
-        precision_config=precision_config,
-    )
-    set_default_manager(manager)
-    return manager
-
-
 # Initialize monitoring - this must be done before any @monitor decorators are used
-manager = initialize_monitoring(
+manager, result_paths = initialize_monitoring(
     enable_time=True,
     enable_precision=True,
-    precision_config="configs/precision_config.json",
+    precision_config="default",
+    result_dir="perf_results",
+    log_level="DEBUG",
 )
 
 
@@ -232,7 +203,7 @@ def run_inference(num_samples: int = 4, batch_size: int = 1) -> List[Dict]:
         List of results for each batch
     """
     # Use the global manager instance
-    global manager
+    global manager, result_paths
 
     # Initialize models and move to device
     model_1 = SimpleNet().to(DEVICE)
@@ -269,8 +240,8 @@ def run_inference(num_samples: int = 4, batch_size: int = 1) -> List[Dict]:
         for fused_pred in pred["fused_predictions"]:
             print(f"  {fused_pred['class']}: {fused_pred['score']:.3f}")
 
-    # Export monitoring results
-    csv_path = manager.export_time_stats("results/time")
+    # Export monitoring results using unified paths
+    csv_path = manager.export_time_stats(result_paths["time"])
     print(f"\nExported timing statistics to: {csv_path}")
 
     # Print timing statistics
@@ -292,7 +263,5 @@ def run_inference(num_samples: int = 4, batch_size: int = 1) -> List[Dict]:
 
 
 if __name__ == "__main__":
-    # Set up logging
-    setup_base_logger("results/logs", level="DEBUG")
     # Run with small number of samples and batch size 1
     results = run_inference(num_samples=5, batch_size=1)

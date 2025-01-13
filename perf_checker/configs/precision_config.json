@@ -1,6 +1,6 @@
 {
     "task": "tensor",
-    "dump_path": "./results",
+    "dump_path": "./perf_results",
     "rank": [],
     "step": [],
     "level": "L1",

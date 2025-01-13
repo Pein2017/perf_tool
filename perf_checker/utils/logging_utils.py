@@ -2,22 +2,13 @@
 
 import logging
 import os
-from datetime import datetime
 from typing import Optional
 
 # Global timestamp for the current run
 _CURRENT_TIMESTAMP: Optional[str] = None
 
 
-def get_timestamp() -> str:
-    """Get the current timestamp or create a new one if not exists."""
-    global _CURRENT_TIMESTAMP
-    if _CURRENT_TIMESTAMP is None:
-        _CURRENT_TIMESTAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
-    return _CURRENT_TIMESTAMP
-
-
-def create_results_structure(base_dir: str = "results") -> dict[str, str]:
+def create_results_structure(base_dir: str = "perf_results") -> dict[str, str]:
     """Create a structured directory for all results.
 
     Args:
@@ -26,21 +17,20 @@ def create_results_structure(base_dir: str = "results") -> dict[str, str]:
     Returns:
         Dictionary with paths for different result types
     """
-    timestamp = get_timestamp()
-    timestamp_dir = os.path.join(base_dir, timestamp)
     paths = {
         "base": base_dir,
-        "timestamp": timestamp_dir,
-        "time": os.path.join(timestamp_dir, "time"),
-        "dump": os.path.join(timestamp_dir, "dump"),
-        "logs": timestamp_dir,
+        "time": os.path.join(base_dir, "time"),
+        "dump": os.path.join(base_dir, "dump"),
+        "logs": os.path.join(base_dir, "logs"),
     }
     for path in paths.values():
         os.makedirs(path, exist_ok=True)
     return paths
 
 
-def setup_base_logger(log_dir: str = "results", level: int = logging.DEBUG) -> None:
+def setup_base_logger(
+    log_dir: str = "perf_results", level: int = logging.DEBUG
+) -> None:
     """Set up the base logger configuration that all other loggers will inherit.
 
     Args:
